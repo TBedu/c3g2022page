@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>苹果乐园 - 初2022级3班</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* 顶部导航栏 */
+    .topbar {
+      background: linear-gradient(to bottom, rgba(34, 34, 34, 0.8), rgba(34, 34, 34, 0));
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 20px;
+      z-index: 1000;
+    }
+
+    .topbar::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .topbar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* 轮播图 */
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .carousel img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+
+    /* 轮播进度条 */
+    .progress-bar-container {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 20%; /* 缩短电脑端进度条宽度 */
+      height: 5px;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #3498db;
+      width: 0%;
+      transition: width 0.1s;
+    }
+
+    /* 文字和按钮显示在图片左下角 */
+    .title-container {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      max-width: 1200px;
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      min-height: 100px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .explore-more-btn {
+      display: inline-block;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #3498db;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .explore-more-btn:hover {
+      background-color: #2980b9;
+    }
+
+    /* 电脑端样式 */
+    @media (min-width: 769px) {
+      .title-container {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .title,
+      .subtitle {
+        flex: 1;
+        text-align: left;
+      }
+
+      .explore-more-btn {
+        margin-left: 20px;
+      }
+
+      .progress-bar-container {
+        width: 20%; /* 缩短电脑端进度条宽度 */
+      }
+    }
+
+    /* 手机端样式 */
+    @media (max-width: 768px) {
+      .topbar {
+        padding: 10px 15px;
+      }
+
+      .nav-title {
+        font-size: 16px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .title {
+        font-size: 18px;
+      }
+
+      .explore-more-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+      }
+
+      .progress-bar-container {
+        bottom: 10px;
+        right: 10px;
+        width: 50%; /* 手机端进度条宽度 */
+      }
+    }
+  </style>
+  <!-- 网站图标 -->
+  <link rel="icon" href="static/img/logo.ico" type="image/png">
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <div class="topbar">
+    <div class="topbar-content container">
+      <div class="nav-title">苹果乐园 - 初2022级3班</div>
+      <div class="nav-links">
+        <a href="https://c3blog.tbedu.top" class="nav-link">了解更多信息</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 英雄轮播图 -->
+  <div class="hero">
+    <div class="carousel">
+      <img src="static/img/1.jpeg" class="active" alt="图片1">
+      <img src="static/img/2.jpeg" alt="图片2">
+      <img src="static/img/3.jpeg" alt="图片3">
+      <img src="static/img/4.jpeg" alt="图片4">
+      <img src="static/img/5.jpeg" alt="图片5">
+      <img src="static/img/6.jpeg" alt="图片6">
+      <img src="static/img/7.jpeg" alt="图片7">
+      <img src="static/img/8.jpeg" alt="图片8">
+      <img src="static/img/9.jpeg" alt="图片9">
+      <img src="static/img/10.jpeg" alt="图片10">
+      <!-- 轮播进度条 -->
+      <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+
+    <!-- 文字和按钮显示在图片左下角 -->
+    <div class="title-container">
+      <div>
+        <h1 class="title">苹果乐园 - 初2022级3班</h1>
+        <p class="subtitle">我们是电子科技大学实验中学初2022级3班，在这里，知识与梦想同行！</p>
+      </div>
+      <a href="https://c3blog.tbedu.top" class="explore-more-btn">探索更多</a>
+    </div>
+  </div>
+
+  <script>
+    // 轮播图切换逻辑
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel img');
+    const progressBar = document.querySelector('.progress-bar');
+    const totalSlides = slides.length;
+    let intervalId;
+
+    function nextSlide() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      currentSlide = (currentSlide + 1) % totalSlides;
+      slides[currentSlide].classList.add('active');
+      updateProgressBar();
+    }
+
+    function updateProgressBar() {
+      clearInterval(intervalId);
+      let progress = 0;
+      const interval = setInterval(() => {
+        if (progress >= 100) {
+          clearInterval(interval);
+          nextSlide();
+        } else {
+          progress += 1.5;
+          progressBar.style.width = `${progress}%`;
+        }
+      }, 50);
+      intervalId = setInterval(nextSlide, 10000); // 延长轮播时间为10秒
+    }
+
+    // 初始化
+    updateProgressBar();
+  </script>
+</body>
+</html>
