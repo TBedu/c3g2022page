@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>时光相册 - 初2022级3班回忆录</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="icon" href="static/img/logo.ico" type="image/png">
+</head>
+<body class="standard-page">
+  <div class="topbar">
+  <div class="topbar-title">初2022级3班</div>
+  <button class="menu-toggle" aria-label="打开菜单" onclick="document.querySelector('.dropdown-menu').classList.toggle('show')">☰</button>
+  <div class="dropdown-menu">
+    <div class="topbar-links">
+      <a href="index.html" class="topbar-link">首页</a>
+      <a href="gallery.html" class="topbar-link active">时光相册</a>
+      <a href="teachers.html" class="topbar-link">师长寄语</a>
+      <a href="classmates.html" class="topbar-link">同窗心语</a>
+      <a href="story.html" class="topbar-link">我们的故事</a>
+      <a href="about.html" class="topbar-link">关于我们</a>
+    </div>
+  </div>
+</div>
+  <div class="page-container">
+    <h1 class="page-title">时光相册</h1>
+    <p class="page-description">这里珍藏着我们共同的回忆，点击分类查看不同时期的照片</p>
+
+    <!-- 照片分类导航 -->
+    <div class="gallery-categories">
+      <button class="category-btn active" data-category="all">全部照片</button>
+      <button class="category-btn" data-category="graduation" disabled>毕业时刻</button>
+      <button class="category-btn" data-category="class-photos" disabled>班级合照</button>
+      <button class="category-btn" data-category="activities" disabled>活动剪影</button>
+      <button class="category-btn" data-category="teachers" disabled>老师风采</button>
+      <button class="category-btn" data-category="campus" disabled>校园点滴</button>
+    </div>
+
+    <!-- 照片网格 -->
+    <div class="gallery-grid">
+      <!-- 我们的故事时光相册 -->
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/X6ZIv/timeline1.jpg" alt="开学第一天" class="gallery-img">
+        <div class="gallery-caption">开学第一天 - 2022年9月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/bYptW/timeline2-1.jpg" alt="运动会开幕式" class="gallery-img">
+        <div class="gallery-caption">运动会开幕式 - 2022年10月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/Q3EHR/timeline2-2.jpg" alt="运动会比赛" class="gallery-img">
+        <div class="gallery-caption">运动会比赛 - 2022年10月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/3MZCP/timeline3-1.jpg" alt="春游集体照" class="gallery-img">
+        <div class="gallery-caption">春游集体照 - 2023年4月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/BRqcV/timeline3-2.jpg" alt="篝火晚会" class="gallery-img">
+        <div class="gallery-caption">春游集体照 - 2023年4月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/eJ4Se/timeline3-3.jpg" alt="真人CS" class="gallery-img">
+        <div class="gallery-caption">春游集体照 - 2023年4月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/P9VSz/timeline4.jpg" alt="儿童节表演" class="gallery-img">
+        <div class="gallery-caption">六一儿童节才艺表演 - 2023年6月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/YgQHr/timeline5-1.jpg" alt="红歌会准备" class="gallery-img">
+        <div class="gallery-caption">一二九红歌会表演 - 2023年12月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/kvwTE/timeline5-2.jpg" alt="红歌会表演" class="gallery-img">
+        <div class="gallery-caption">一二九红歌会准备 - 2023年12月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/N90Ta/timeline5-3.jpg" alt="获奖合影" class="gallery-img">
+        <div class="gallery-caption">一二九红歌会获表演 - 2023年12月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/ZO8sP/timeline6-1.jpg" alt="晚会布置" class="gallery-img">
+        <div class="gallery-caption">元旦晚会 - 2024年1月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/aGOhO/timeline6-2.jpg" alt="节目表演" class="gallery-img">
+        <div class="gallery-caption">元旦晚会节 - 2024年1月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/pWqf0/timeline7-1.jpg" alt="自己做饭" class="gallery-img">
+        <div class="gallery-caption">邛人部落 - 2024年3月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/93Bcm/timeline7-2.jpg" alt="团队游戏" class="gallery-img">
+        <div class="gallery-caption">邛人部落 - 2024年3月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/49Rue/timeline8.jpg" alt="双弹城参观" class="gallery-img">
+        <div class="gallery-caption">两弹精神学习 - 2024年5月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/Gkwta/timeline9.jpg" alt="科幻馆体验" class="gallery-img">
+        <div class="gallery-caption">科幻馆参观 - 2024年9月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/DJeuz/timeline10.jpg" alt="心理团辅活动" class="gallery-img">
+        <div class="gallery-caption">中考心理团辅 - 2025年3月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/VO8FR/home.jpg" alt="毕业照" class="gallery-img">
+        <div class="gallery-caption">毕业留影 - 2025年5月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/zGvUe/studying.jpg" alt="中考前夕" class="gallery-img">
+        <div class="gallery-caption">中考奋斗时光 - 2025年6月</div>
+      </div>
+      <div class="gallery-item" data-category="class-photos">
+        <img src="https://yun.tbedu.top:5212/f/OevUR/latest.jpg" alt="毕业典礼" class="gallery-img">
+        <div class="gallery-caption">毕业典礼 - 2025年6月</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 照片查看器模态框 -->
+  <div id="photo-viewer" class="photo-viewer">
+    <button class="photo-close">&times;</button>
+    <img src="" alt="大图查看" class="photo-large">
+    <div class="photo-caption"></div>
+  </div>
+
+  <script>
+    // 照片分类筛选功能
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // 移除所有按钮的active类
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        // 给当前按钮添加active类
+        btn.classList.add('active');
+
+        const category = btn.getAttribute('data-category');
+
+        // 筛选照片
+        galleryItems.forEach(item => {
+          if (category === 'all' || item.getAttribute('data-category') === category) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 照片查看器功能
+    const photoViewer = document.getElementById('photo-viewer');
+    const photoLarge = document.querySelector('.photo-large');
+    const photoCaption = document.querySelector('.photo-caption');
+    const photoClose = document.querySelector('.photo-close');
+    const galleryImgs = document.querySelectorAll('.gallery-img');
+
+    galleryImgs.forEach(img => {
+      img.addEventListener('click', () => {
+        photoLarge.src = img.src;
+        photoCaption.textContent = img.nextElementSibling.textContent;
+        photoViewer.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // 防止背景滚动
+      });
+    });
+
+    photoClose.addEventListener('click', () => {
+      photoViewer.style.display = 'none';
+      document.body.style.overflow = 'auto'; // 恢复背景滚动
+    });
+
+    // 点击模态框背景关闭
+    photoViewer.addEventListener('click', (e) => {
+      if (e.target === photoViewer) {
+        photoViewer.style.display = 'none';
+        document.body.style.overflow = 'auto';
+      }
+    });
+  </script>
+<div class="footer">Designed by Trae CN and FeltSquirrel727. Hosted on Cloudflare Pages.<br>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://www.tbedu.top" target="_blank" rel="noopener">TBedu</a>. All rights reserved.</div>
+</body>
+</html>
